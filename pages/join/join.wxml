@@ -1,20 +1,86 @@
-<image class="banner" src="/images/about.jpg"></image>
+<view class="add-page">
 
-<view class='block'>
-  <view class='block-title'>关于我们</view>
-  <text class='block-desc'>工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起，工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起</text>
-</view>
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">姓名</text>
+      <input bindinput="bindNameInput" class="input" maxlength="100" placeholder="请输入姓名" />
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
 
-<view class='block'>
-  <view class='block-title'>关于我们</view>
-  <text class='block-desc'>工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起，工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起</text>
-</view>
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">手机号</text>
+      <input bindinput="bindTelInput" class="input" maxlength="11" placeholder="请输入手机号" />
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
 
-<view class='block'>
-  <view class='block-title'>关于我们</view>
-  <text class='block-desc'>工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起，工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起工顶起</text>
-</view>
+  <view class="mod-a mt20">
+    <view class="mod t-name">
+      <text class="key">身份证号</text>
+      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="请输入身份证" />
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
 
-<view class='footer'>
-  <button bindtap='tell'>电话咨询</button>
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">出生日期</text>
+      <picker mode="date" value="{{task.birthday}}" start="2018-01-01" bindchange="birthDateChange">
+        <view class="date">{{task.birthday}}
+          <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">性别</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <!-- 所在地 -->
+  <view class="mod-a mt20">
+    <view class="mod t-name t-address" bindtap="chooseLocation">
+      <text class="key">所在地</text>
+      <text class="value">{{task.address}}</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+
+  <!-- 联系地址 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">联系地址</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+<view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">城市</text>
+      <input bindtap="selectCity" class="input" maxlength="100" value='上海市'/>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+
+
+  <view class="mod-a mt20">
+    <view class="mod t-name">
+      <text class="key">姓名</text>
+      <input bindinput="bindNameInput" class="input" maxlength="100" placeholder="请输入姓名" />
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
 </view>
