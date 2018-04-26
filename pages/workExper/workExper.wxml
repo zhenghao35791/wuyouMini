@@ -1,0 +1,46 @@
+<view class="add-page" wx:for="{{workExpers}}" wx:key="key">
+  <!-- 公司 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">公司</text>
+      <input bindinput="bindWorkCompany" id="{{item.workID}}" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 职位 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">职位</text>
+      <input bindinput="bindWorkJob" id="{{item.workID}}" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <view class="mod-a">
+    <!-- 起始时间 -->
+    <view class="mod2 t-time">
+      <view class="start">
+        <text class="key">开始于</text>
+        <picker mode="date" id="{{item.workID}}" value="{{item.workTimeStart}}" start="{{item.workTimeStart}}" bindchange="startDateChange">
+          <view class="date">{{item.workTimeStart}}
+            <image class="arrow-d" src="../../images/arrow-d-0.png"></image>
+          </view>
+        </picker>
+      </view>
+      <view class="pipe"></view>
+      <view class="end">
+        <text class="key">结束于</text>
+        <picker mode="date" id="{{item.workID}}" value="{{item.workTimeEnd}}" start="{{item.workTimeEnd}}" bindchange="endDateChange">
+          <view class="date">{{item.workTimeEnd}}
+            <image class="arrow-d" src="../../images/arrow-d-0.png"></image>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>
+  <!-- 添加 -->
+  <view class="mod-a mt20" bindtap='addWorkExper'>
+    <view class="mod t-name">
+      <text class="key">添加</text>
+      <text class="key">+更多工作经历</text>
+    </view>
+  </view>
+<button class="long-btn" type="warn" bindtap="saveIntent"> 保存 </button>

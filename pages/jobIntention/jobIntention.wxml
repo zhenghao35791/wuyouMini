@@ -1,0 +1,18 @@
+<!--pages/jobIntention/jobIntention.wxml-->
+<view class="add-page">
+  <!-- 意向工作地点 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">意向工作地点</text>
+      <input bindinput="intentAddressInput" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+    <!-- 意向工作职位 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">意向工作职位</text>
+      <input bindinput="intentJobInput" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <button class="long-btn" type="warn" bindtap="saveIntent"> 保存 </button>
+</view>

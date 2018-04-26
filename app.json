@@ -2,8 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/join/join",
-    "pages/selectcity/selectcity"
-    ],
+    "pages/jobIntention/jobIntention",
+    "pages/workExper/workExper"
+  ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",

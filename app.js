@@ -6,7 +6,6 @@ App({
     /* 定义全局变量 */
     userInfo: null,
     host: 'http://localhost:5000',
-    baseurl: 'https://vacations.ceair.com/wechat', //线上的接口
   },
   
   fetchApi(url, params, method = 'GET') {

@@ -1,30 +1,20 @@
 <view class="add-page">
-
+  <!-- 姓名 -->
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">姓名</text>
-      <input bindinput="bindNameInput" class="input" maxlength="100" placeholder="请输入姓名" />
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+      <input bindinput="bindNameInput" class="input" maxlength="100" placeholder="" />
     </view>
   </view>
-
+  <!-- 手机号 -->
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">手机号</text>
-      <input bindinput="bindTelInput" class="input" maxlength="11" placeholder="请输入手机号" />
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+      <input bindinput="bindTelInput" class="input" maxlength="11" placeholder="" />
     </view>
   </view>
-
+  <!-- 出生日期 -->
   <view class="mod-a mt20">
-    <view class="mod t-name">
-      <text class="key">身份证号</text>
-      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="请输入身份证" />
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
-    </view>
-  </view>
-
-  <view class="mod-a">
     <view class="mod t-name">
       <text class="key">出生日期</text>
       <picker mode="date" value="{{task.birthday}}" start="2018-01-01" bindchange="birthDateChange">
@@ -34,53 +24,104 @@
       </picker>
     </view>
   </view>
-
+  <!-- 性别 -->
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">性别</text>
       <radio-group class="radio-group" bindchange="radioChange">
-        <label class="radio" wx:for="{{items}}">
+        <label class="radio" wx:for="{{sexs}}" wx:key="key">
           <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
   </view>
-
+  <!-- 名族 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">民族</text>
+      <input bindinput="bindNationInput" class="input" maxlength="6" placeholder="" />
+    </view>
+  </view>
   <!-- 所在地 -->
-  <view class="mod-a mt20">
+  <view class="mod-a">
     <view class="mod t-name t-address" bindtap="chooseLocation">
       <text class="key">所在地</text>
       <text class="value">{{task.address}}</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
+  <!-- 邮箱 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">邮箱</text>
+      <input bindinput="bindEmailInput" type="text" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
 
-  <!-- 联系地址 -->
+  <!-- 求职意向 -->
+  <view class="mod-a mt20" bindtap='jobIntention'>
+    <view class="mod t-name">
+      <text class="key">求职意向</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 专业技能 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">专业技能</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 工作经历 -->
+  <view class="mod-a mt20" bindtap='jobExper'>
+    <view class="mod t-name">
+      <text class="key">工作经历</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 学历证书 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">学历证书</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 工作要求 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">工作要求</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 其他信息 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">其他信息</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+
+
+  <!-- 联系地址 
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">联系地址</text>
       <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
         <view class="picker">
-          当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+          {{region[0]}} {{region[1]}} {{region[2]}}
         </view>
       </picker>
     </view>
-  </view>
+  </view> -->
 
-<view class="mod-a">
-    <view class="mod t-name">
-      <text class="key">城市</text>
-      <input bindtap="selectCity" class="input" maxlength="100" value='上海市'/>
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
-    </view>
-  </view>
-
-
-  <view class="mod-a mt20">
-    <view class="mod t-name">
-      <text class="key">姓名</text>
-      <input bindinput="bindNameInput" class="input" maxlength="100" placeholder="请输入姓名" />
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
-    </view>
-  </view>
 </view>
+
+
+<!-- 身份证号 -->
+<!-- <view class="mod-a mt20">
+    <view class="mod t-name">
+      <text class="key">身份证号</text>
+      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="" />
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view> -->

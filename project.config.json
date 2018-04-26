@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -28,17 +28,22 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "logs",
-					"pathName": "pages/logs/logs",
-					"query": "name=test",
-					"scene": "1001"
+					"id": 0,
+					"name": "workExper",
+					"pathName": "pages/workExper/workExper",
+					"query": ""
 				},
 				{
 					"id": -1,
+					"name": "jobIntention",
+					"pathName": "pages/jobIntention/jobIntention",
+					"query": ""
+				},
+				{
+					"id": 2,
 					"name": "join",
 					"pathName": "pages/join/join",
 					"query": ""

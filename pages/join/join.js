@@ -5,35 +5,33 @@ Page({
     task: {
       name: '',
       tel: '',
-      IDCard: '',
+
       birthday: '2018-01-01',
-      sex:'',
-      address: '点击选择地点'
+      sex: '',
+      nation: '',
+      address: '点击选择地点',
+      email: '',
+
+      IDCard: '',
     },
-    items: [
-      { name: 'female', value: '女' },
-      { name: 'male', value: '男', checked: 'true' }
+    sexs: [
+      { name: 'male', value: '男', checked: 'true' },
+      { name: 'female', value: '女' }
     ],
     region: ['江苏省', '苏州市', '高新区'],
-    customItem: '全部',
-    hotelCity: '苏州市'
+    customItem: '全部'
   },
-  // 设置名称
+  // 设置姓名
   bindNameInput: function (e) {
     this.setData({
       'task.name': e.detail.value
     });
+    console.log(this.data.task);
   },
-  // 设置名称
+  // 设置手机号
   bindTelInput: function (e) {
     this.setData({
       'task.tel': e.detail.value
-    });
-  },
-  // 设置身份证
-  bindIDCardInput: function (e) {
-    this.setData({
-      'task.IDCard': e.detail.value
     });
   },
   // 设置出生日期
@@ -42,22 +40,25 @@ Page({
       'task.birthday': e.detail.value
     })
   },
+  // 设置性别
   radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value);
     this.setData({
       'task.sex': e.detail.value
     })
   },
-  // 获取当前地点
+  // 设置民族
+  bindNationInput: function (e) {
+    this.setData({
+      'task.nation': e.detail.value
+    });
+  },
+  // 设置所在地
   chooseLocation: function () {
     var that = this;
-
     wx.chooseLocation({
       success: function (res) {
         that.setData({
-          'task.address': res.address,
-          'task.latitude': res.latitude,
-          'task.longitude': res.longitude
+          'task.address': res.address
         })
       },
       fail: function () {
@@ -68,27 +69,33 @@ Page({
       }
     })
   },
-  // 获取联系地址
+  // 设置邮箱
+  bindEmailInput: function (e) {
+    this.setData({
+      'task.email': e.detail.value
+    });
+  },
+  // 求职意向跳转
+  jobIntention: function () {
+    wx.navigateTo({ url: "/pages/jobIntention/jobIntention" });
+  },
+  jobExper: function () {
+    wx.navigateTo({ url: "/pages/workExper/workExper" });
+  },
+
+
+  // 设置联系地址
   bindRegionChange: function (e) {
     console.log('联系地址改变，携带值为', e.detail.value)
     this.setData({
       'task.region': e.detail.value
     })
   },
-  // 选择城市
-  selectCity: function (e) {//选择城市 切换保存方法
-    var type = e.currentTarget.dataset.type;
-    var that = this;
-    var url = '../selectcity/selectcity';
-    app.globalData.cityFn = function (city) {
-          that.setData({
-            startCity: city
-          });
-    };
-
-    wx.navigateTo({
-      url
-    })
+  // 设置身份证
+  bindIDCardInput: function (e) {
+    this.setData({
+      'task.IDCard': e.detail.value
+    });
   },
   // 
   onShow: function () {
