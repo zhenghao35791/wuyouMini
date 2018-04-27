@@ -53,6 +53,12 @@
 					"name": "educateCerti",
 					"pathName": "pages/educateCerti/educateCerti",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "professionSkill",
+					"pathName": "pages/professionSkill/professionSkill",
+					"query": ""
 				}
 			]
 		}

@@ -7,7 +7,7 @@
       <input bindinput="intentAddressInput" class="input" maxlength="100" placeholder="" />
     </view>
   </view>
-    <!-- 意向工作职位 -->
+  <!-- 意向工作职位 -->
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">意向工作职位</text>

@@ -1,0 +1,24 @@
+<view class="add-page">
+<!-- 工作技能 -->
+  <view class="page-section">
+    <view class="page-section-title">工作技能</view>
+    <view class="textarea-wrp">
+      <textarea bindblur="bindWorkingSkills" auto-height />
+    </view>
+  </view>
+<!-- 自我介绍 -->
+  <view class="page-section">
+    <view class="page-section-title">自我介绍</view>
+    <view class="textarea-wrp">
+      <textarea bindblur="bindSelfIntroduce" auto-height />
+    </view>
+  </view>
+<!-- 自我评价 -->
+  <view class="page-section">
+    <view class="page-section-title">自我评价</view>
+    <view class="textarea-wrp">
+      <textarea bindblur="bindSelfJudge" auto-height />
+    </view>
+  </view>  
+   <button class="long-btn" type="warn" bindtap="saveProfessionSkill"> 保存 </button>
+</view>

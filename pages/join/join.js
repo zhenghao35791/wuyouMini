@@ -18,7 +18,7 @@ Page({
       { name: 'male', value: '男', checked: 'true' },
       { name: 'female', value: '女' }
     ],
-    region: ['江苏省', '苏州市', '高新区'],
+    region: ['广东省', '广州市', '海珠区'],
     customItem: '全部'
   },
   // 设置姓名
@@ -85,14 +85,17 @@ Page({
   // 学历证书跳转
   educateCerti: function () {
     wx.navigateTo({ url: "/pages/educateCerti/educateCerti" });
-  },
-
+  }, 
+  // 专业技能跳转
+  professionSkill: function () {
+    wx.navigateTo({ url: "/pages/professionSkill/professionSkill" });
+  }, 
 
   // 设置联系地址
   bindRegionChange: function (e) {
-    console.log('联系地址改变，携带值为', e.detail.value)
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      'task.region': e.detail.value
+      region: e.detail.value
     })
   },
   // 设置身份证

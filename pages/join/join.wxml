@@ -43,11 +43,22 @@
     </view>
   </view>
   <!-- 所在地 -->
-  <view class="mod-a">
+  <view class="mod-a mt20">
     <view class="mod t-name t-address" bindtap="chooseLocation">
       <text class="key">所在地</text>
       <text class="value">{{task.address}}</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 联系地址 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">联系地址</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
     </view>
   </view>
   <!-- 邮箱 -->
@@ -67,7 +78,7 @@
   </view>
   <!-- 专业技能 -->
   <view class="mod-a">
-    <view class="mod t-name">
+    <view class="mod t-name" bindtap='professionSkill'>
       <text class="key">专业技能</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
@@ -100,20 +111,6 @@
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
-
-
-  <!-- 联系地址 
-  <view class="mod-a">
-    <view class="mod t-name">
-      <text class="key">联系地址</text>
-      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
-        <view class="picker">
-          {{region[0]}} {{region[1]}} {{region[2]}}
-        </view>
-      </picker>
-    </view>
-  </view> -->
-
 </view>
 
 

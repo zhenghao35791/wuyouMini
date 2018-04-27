@@ -1,0 +1,65 @@
+/* pages/jobIntention/jobIntention.wxss */
+.mt20 {
+  margin-top: 20rpx;
+}
+
+.add-page {
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  color: #676767;
+  padding: 30rpx 0;
+}
+
+.mod-a {
+  padding: 0 20rpx;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+
+.mod {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  padding: 0 10rpx;
+}
+
+.arrow-r {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+
+.long-btn{
+  width: 92%;
+  margin-top: 20rpx;
+}
+
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}

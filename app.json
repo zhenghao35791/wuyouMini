@@ -2,6 +2,7 @@
   "pages": [
     "pages/join/join",
     "pages/jobIntention/jobIntention",
+    "pages/professionSkill/professionSkill",        
     "pages/workExper/workExper",
     "pages/educateCerti/educateCerti",        
     "pages/info/info"
