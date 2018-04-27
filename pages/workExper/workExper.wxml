@@ -38,9 +38,9 @@
 </view>
   <!-- 添加 -->
   <view class="mod-a mt20" bindtap='addWorkExper'>
-    <view class="mod t-name">
+    <view class="mod t-name t-add">
       <text class="key">添加</text>
-      <text class="key">+更多工作经历</text>
+      <text class="key">+ 更多工作经历</text>
     </view>
   </view>
 <button class="long-btn" type="warn" bindtap="saveIntent"> 保存 </button>

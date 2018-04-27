@@ -80,7 +80,7 @@
     </view>
   </view>
   <!-- 学历证书 -->
-  <view class="mod-a">
+  <view class="mod-a" bindtap='educateCerti'>
     <view class="mod t-name">
       <text class="key">学历证书</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>

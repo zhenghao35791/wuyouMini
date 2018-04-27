@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/join/join",
     "pages/jobIntention/jobIntention",
-    "pages/workExper/workExper"
+    "pages/workExper/workExper",
+    "pages/educateCerti/educateCerti",        
+    "pages/info/info"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -19,16 +20,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "职位",
-        "iconPath": "images/task_unselected.png",
-        "selectedIconPath": "images/task_selected.png"
-      },
-      {
         "pagePath": "pages/join/join",
         "text": "入职",
         "iconPath": "images/add_unselected.png",
         "selectedIconPath": "images/add_selected.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "职位",
+        "iconPath": "images/task_unselected.png",
+        "selectedIconPath": "images/task_selected.png"
       }
     ]
   }

@@ -47,6 +47,12 @@
 					"name": "join",
 					"pathName": "pages/join/join",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "educateCerti",
+					"pathName": "pages/educateCerti/educateCerti",
+					"query": ""
 				}
 			]
 		}

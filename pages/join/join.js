@@ -26,7 +26,6 @@ Page({
     this.setData({
       'task.name': e.detail.value
     });
-    console.log(this.data.task);
   },
   // 设置手机号
   bindTelInput: function (e) {
@@ -79,8 +78,13 @@ Page({
   jobIntention: function () {
     wx.navigateTo({ url: "/pages/jobIntention/jobIntention" });
   },
+  // 工作经历跳转
   jobExper: function () {
     wx.navigateTo({ url: "/pages/workExper/workExper" });
+  },
+  // 学历证书跳转
+  educateCerti: function () {
+    wx.navigateTo({ url: "/pages/educateCerti/educateCerti" });
   },
 
 

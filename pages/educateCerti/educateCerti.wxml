@@ -1,0 +1,52 @@
+<view class="add-page">
+  <!-- 学校 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">学校</text>
+      <input bindinput="bindSchool" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 学历 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">学历</text>
+      <picker bindchange="bindEducation" value="{{index}}" range="{{educations}}">
+        <view class="picker">
+          {{educations[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 专业 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">专业</text>
+      <input bindinput="bindMajor" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+</view>
+
+<view class="add-page" wx:for="{{certis}}" wx:key="key">
+  <!-- 证书名称 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">证书名称</text>
+      <input bindinput="bindCetiName" id="{{item.ceriID}}" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 证书编号 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">证书编号</text>
+      <input bindinput="bindCetiNumber" id="{{item.ceriID}}" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+</view>
+  <!-- 添加证书 -->
+  <view class="mod-a mt20" bindtap='addCeri'>
+    <view class="mod t-name t-add">
+      <text class="key">添加</text>
+      <text class="key">+ 更多证书</text>
+    </view>
+  </view>
+<button class="long-btn" type="warn" bindtap="saveCeris"> 保存 </button>
