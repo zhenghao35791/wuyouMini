@@ -1,0 +1,78 @@
+<view class="add-page">
+  <!-- 身高 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">身高</text>
+      <input bindinput="bindHeight" class="input" maxlength="100" placeholder="" />cm
+    </view>
+  </view>
+  <!-- 体重 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">体重</text>
+      <input bindinput="bindWeight" class="input" maxlength="100" placeholder="" />kg
+    </view>
+  </view>
+  <!-- 婚姻状况 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">婚姻状况</text>
+      <radio-group class="radio-group" bindchange="radioMarrige">
+        <label class="radio" wx:for="{{marriges}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 紧急联系人 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">紧急联系人</text>
+      <input bindinput="bindEmergencyConntact" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 紧急联系电话 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">紧急联系电话</text>
+      <input bindinput="bindEmergencyTel" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 是否党员 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">是否党员</text>
+      <radio-group class="radio-group" bindchange="radioPartyMember">
+        <label class="radio" wx:for="{{partyMembers}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+   <!-- 党龄 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">党龄</text>
+      <input bindinput="bindPartyYear" class="input" maxlength="100" placeholder="" />年
+    </view>
+  </view>
+  <!-- 是否吸烟 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">是否吸烟</text>
+      <radio-group class="radio-group" bindchange="radioSmoke">
+        <label class="radio" wx:for="{{smokes}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 外语 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">外语</text>
+      <input bindinput="bindLanguage" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <button class="long-btn" type="warn" bindtap="saveOtherInfo"> 保存 </button>
+</view>

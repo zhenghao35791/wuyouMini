@@ -7,7 +7,7 @@ Page({
       major:''
     },
     index: 0,
-    educations: ['专科', '本科', '硕士', '博士', '其他'],
+    educations: ['小学','初中','高中','职高','专科', '本科', '硕士', '博士', '其他'],
     certis: [
       {
         ceriID: 0,

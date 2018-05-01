@@ -1,0 +1,76 @@
+<view class="add-page">
+  <!-- 薪资期望 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">薪资期望</text>
+      <input bindinput="bindMoneyExpect" class="input" maxlength="100" placeholder="" />
+    </view>
+  </view>
+  <!-- 缴纳社保 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">需要缴纳社保</text>
+      <radio-group class="radio-group" bindchange="radioPaySocial">
+        <label class="radio" wx:for="{{paySocials}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 社保缴纳基数 -->
+  <view class="mod-a">
+    <view class="mod t-name" style='height:180rpx;'>
+      <text class="key" style='width:40%;'>社保缴纳基数</text>
+      <radio-group class="radio-group" bindchange="radioSocialBase">
+        <label class="radio" style='display:block;line-height:80rpx;' wx:for="{{socialBases}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 可报道日期 -->
+  <view class="mod-a mt20">
+    <view class="mod t-name">
+      <text class="key">可报道日期</text>
+      <picker mode="date" value="{{jobRequre.workTime}}" start="2018-01-01" bindchange="workTimeChange">
+        <view class="date">{{jobRequre.workTime}}
+          <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <!-- 是否接受周末工作 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">接受周末工作</text>
+      <radio-group class="radio-group" bindchange="radioWorkWeekend">
+        <label class="radio" wx:for="{{workWeekends}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 是否接受倒班 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">接受倒班</text>
+      <radio-group class="radio-group" bindchange="radioWorkShift">
+        <label class="radio" wx:for="{{workShifts}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 是否需要提供住宿 -->
+  <view class="mod-a">
+    <view class="mod t-name">
+      <text class="key">需要提供住宿</text>
+      <radio-group class="radio-group" bindchange="radioWorkStay">
+        <label class="radio" wx:for="{{workStays}}" wx:key="key">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <button class="long-btn" type="warn" bindtap="saveJobRequre"> 保存 </button>
+</view>

@@ -5,20 +5,18 @@ Page({
     task: {
       name: '',
       tel: '',
-
       birthday: '2018-01-01',
       sex: '',
       nation: '',
       address: '点击选择地点',
       email: '',
-
       IDCard: '',
     },
     sexs: [
       { name: 'male', value: '男', checked: 'true' },
       { name: 'female', value: '女' }
     ],
-    region: ['广东省', '广州市', '海珠区'],
+    region: ['江苏省', '苏州市', '高新区'],
     customItem: '全部'
   },
   // 设置姓名
@@ -85,12 +83,19 @@ Page({
   // 学历证书跳转
   educateCerti: function () {
     wx.navigateTo({ url: "/pages/educateCerti/educateCerti" });
-  }, 
+  },
   // 专业技能跳转
   professionSkill: function () {
     wx.navigateTo({ url: "/pages/professionSkill/professionSkill" });
-  }, 
-
+  },
+  // 工作要求跳转
+  jobRequire: function () {
+    wx.navigateTo({ url: "/pages/jobRequire/jobRequire" });
+  },
+  // 其他信息跳转
+  otherInfo: function () {
+    wx.navigateTo({ url: "/pages/otherInfo/otherInfo" });
+  },
   // 设置联系地址
   bindRegionChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)

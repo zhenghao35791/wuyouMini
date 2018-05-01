@@ -1,4 +1,11 @@
 <view class="add-page">
+  <!-- 身份证号 -->
+  <view class="mod-a mt20">
+    <view class="mod t-name">
+      <text class="key">身份证号</text>
+      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="" />
+    </view>
+  </view>
   <!-- 姓名 -->
   <view class="mod-a">
     <view class="mod t-name">
@@ -42,23 +49,26 @@
       <input bindinput="bindNationInput" class="input" maxlength="6" placeholder="" />
     </view>
   </view>
-  <!-- 所在地 -->
-  <view class="mod-a mt20">
-    <view class="mod t-name t-address" bindtap="chooseLocation">
-      <text class="key">所在地</text>
-      <text class="value">{{task.address}}</text>
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
-    </view>
-  </view>
   <!-- 联系地址 -->
   <view class="mod-a">
-    <view class="mod t-name">
-      <text class="key">联系地址</text>
+    <view class="mod t-name" style='height:120rpx;'>
+      <text class="key">
+        <text class="key">联系地址\n</text>
+      <text class="key">法定文书送达地址</text>
+      </text>
       <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
         <view class="picker">
           {{region[0]}}，{{region[1]}}，{{region[2]}}
         </view>
       </picker>
+    </view>
+  </view>
+  <!-- 详细地址 -->
+  <view class="mod-a mt20">
+    <view class="mod t-name t-address" bindtap="chooseLocation">
+      <text class="key">详细地址</text>
+      <text class="value">{{task.address}}</text>
+      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
   <!-- 邮箱 -->
@@ -93,32 +103,22 @@
   <!-- 学历证书 -->
   <view class="mod-a" bindtap='educateCerti'>
     <view class="mod t-name">
-      <text class="key">学历证书</text>
+      <text class="key">学历/证书</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
   <!-- 工作要求 -->
   <view class="mod-a">
-    <view class="mod t-name">
+    <view class="mod t-name" bindtap='jobRequire'>
       <text class="key">工作要求</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
   <!-- 其他信息 -->
   <view class="mod-a">
-    <view class="mod t-name">
+    <view class="mod t-name" bindtap='otherInfo'>
       <text class="key">其他信息</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
     </view>
   </view>
 </view>
-
-
-<!-- 身份证号 -->
-<!-- <view class="mod-a mt20">
-    <view class="mod t-name">
-      <text class="key">身份证号</text>
-      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="" />
-      <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
-    </view>
-  </view> -->

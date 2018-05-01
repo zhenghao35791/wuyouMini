@@ -59,6 +59,18 @@
 					"name": "professionSkill",
 					"pathName": "pages/professionSkill/professionSkill",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jobRequire",
+					"pathName": "pages/jobRequire/jobRequire",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "otherInfo",
+					"pathName": "pages/otherInfo/otherInfo",
+					"query": ""
 				}
 			]
 		}

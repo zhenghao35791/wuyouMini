@@ -2,6 +2,8 @@
   "pages": [
     "pages/join/join",
     "pages/jobIntention/jobIntention",
+    "pages/jobRequire/jobRequire", 
+    "pages/otherInfo/otherInfo",       
     "pages/professionSkill/professionSkill",        
     "pages/workExper/workExper",
     "pages/educateCerti/educateCerti",        
