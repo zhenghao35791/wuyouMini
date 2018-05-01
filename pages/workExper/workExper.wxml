@@ -43,4 +43,4 @@
       <text class="key">+ 更多工作经历</text>
     </view>
   </view>
-<button class="long-btn" type="warn" bindtap="saveIntent"> 保存 </button>
+<button class="long-btn" bindtap="saveIntent"> 保存 </button>

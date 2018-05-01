@@ -24,6 +24,7 @@
   height: 90rpx;
   padding: 0 10rpx;
 }
+
 .mod2 {
   display: flex;
   flex-direction: row;
@@ -140,13 +141,14 @@
   opacity: 0.4;
 }
 
-.long-btn{
+.long-btn {
   width: 92%;
   margin-top: 20rpx;
+  background-color: #4cabaf;
+  color: #fff;
 }
 
-.t-add{
-    color: #2fcc85;
-      font-size: 32rpx;
-
+.t-add {
+  color: #4cabaf;
+  font-size: 32rpx;
 }

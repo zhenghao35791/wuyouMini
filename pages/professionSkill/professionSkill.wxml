@@ -20,5 +20,5 @@
       <textarea bindblur="bindSelfJudge" auto-height />
     </view>
   </view>  
-   <button class="long-btn" type="warn" bindtap="saveProfessionSkill"> 保存 </button>
+   <button class="long-btn" bindtap="saveProfessionSkill"> 保存 </button>
 </view>

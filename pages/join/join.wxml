@@ -37,7 +37,7 @@
       <text class="key">性别</text>
       <radio-group class="radio-group" bindchange="radioChange">
         <label class="radio" wx:for="{{sexs}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -50,7 +50,7 @@
     </view>
   </view>
   <!-- 联系地址 -->
-  <view class="mod-a">
+  <view class="mod-a mt20">
     <view class="mod t-name" style='height:120rpx;'>
       <text class="key">
         <text class="key">联系地址\n</text>
@@ -64,7 +64,7 @@
     </view>
   </view>
   <!-- 详细地址 -->
-  <view class="mod-a mt20">
+  <view class="mod-a">
     <view class="mod t-name t-address" bindtap="chooseLocation">
       <text class="key">详细地址</text>
       <text class="value">{{task.address}}</text>

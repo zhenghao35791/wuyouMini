@@ -14,5 +14,5 @@
       <input bindinput="intentJobInput" class="input" maxlength="100" placeholder="" />
     </view>
   </view>
-  <button class="long-btn" type="warn" bindtap="saveIntent"> 保存 </button>
+  <button class="long-btn" bindtap="saveIntent"> 保存 </button>
 </view>

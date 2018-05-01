@@ -35,6 +35,8 @@
 .long-btn{
   width: 92%;
   margin-top: 20rpx;
+  background-color:#4cabaf;
+  color:#fff;
 }
 
 textarea {

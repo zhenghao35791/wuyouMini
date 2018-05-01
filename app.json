@@ -25,14 +25,14 @@
       {
         "pagePath": "pages/join/join",
         "text": "入职",
-        "iconPath": "images/add_unselected.png",
-        "selectedIconPath": "images/add_selected.png"
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add2.png"
       },
       {
         "pagePath": "pages/info/info",
         "text": "职位",
-        "iconPath": "images/task_unselected.png",
-        "selectedIconPath": "images/task_selected.png"
+        "iconPath": "images/task.png",
+        "selectedIconPath": "images/task2.png"
       }
     ]
   }

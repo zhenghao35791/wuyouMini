@@ -3,7 +3,7 @@
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">薪资期望</text>
-      <input bindinput="bindMoneyExpect" class="input" maxlength="100" placeholder="" />
+      <input bindinput="bindMoneyExpect" class="input" maxlength="100" placeholder="" />元
     </view>
   </view>
   <!-- 缴纳社保 -->
@@ -12,7 +12,7 @@
       <text class="key">需要缴纳社保</text>
       <radio-group class="radio-group" bindchange="radioPaySocial">
         <label class="radio" wx:for="{{paySocials}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -23,7 +23,7 @@
       <text class="key" style='width:40%;'>社保缴纳基数</text>
       <radio-group class="radio-group" bindchange="radioSocialBase">
         <label class="radio" style='display:block;line-height:80rpx;' wx:for="{{socialBases}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -45,7 +45,7 @@
       <text class="key">接受周末工作</text>
       <radio-group class="radio-group" bindchange="radioWorkWeekend">
         <label class="radio" wx:for="{{workWeekends}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -56,7 +56,7 @@
       <text class="key">接受倒班</text>
       <radio-group class="radio-group" bindchange="radioWorkShift">
         <label class="radio" wx:for="{{workShifts}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -67,10 +67,10 @@
       <text class="key">需要提供住宿</text>
       <radio-group class="radio-group" bindchange="radioWorkStay">
         <label class="radio" wx:for="{{workStays}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
   </view>
-  <button class="long-btn" type="warn" bindtap="saveJobRequre"> 保存 </button>
+  <button class="long-btn" bindtap="saveJobRequre"> 保存 </button>
 </view>

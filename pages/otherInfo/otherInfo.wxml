@@ -19,7 +19,7 @@
       <text class="key">婚姻状况</text>
       <radio-group class="radio-group" bindchange="radioMarrige">
         <label class="radio" wx:for="{{marriges}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -44,7 +44,7 @@
       <text class="key">是否党员</text>
       <radio-group class="radio-group" bindchange="radioPartyMember">
         <label class="radio" wx:for="{{partyMembers}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -62,7 +62,7 @@
       <text class="key">是否吸烟</text>
       <radio-group class="radio-group" bindchange="radioSmoke">
         <label class="radio" wx:for="{{smokes}}" wx:key="key">
-          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          <radio color="#4cabaf" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
         </label>
       </radio-group>
     </view>
@@ -74,5 +74,5 @@
       <input bindinput="bindLanguage" class="input" maxlength="100" placeholder="" />
     </view>
   </view>
-  <button class="long-btn" type="warn" bindtap="saveOtherInfo"> 保存 </button>
+  <button class="long-btn" bindtap="saveOtherInfo"> 保存 </button>
 </view>

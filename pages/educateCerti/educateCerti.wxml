@@ -49,4 +49,4 @@
       <text class="key">+ 更多证书</text>
     </view>
   </view>
-<button class="long-btn" type="warn" bindtap="saveCeris"> 保存 </button>
+<button class="long-btn" bindtap="saveCeris"> 保存 </button>
