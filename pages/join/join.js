@@ -103,13 +103,16 @@ Page({
       region: e.detail.value
     })
   },
+  // 身份证摄像头跳转
+  idCardCamera: function () {
+    wx.navigateTo({ url: "/pages/idCardCamera/idCardCamera" });
+  },
   // 设置身份证
   bindIDCardInput: function (e) {
     this.setData({
       'task.IDCard': e.detail.value
     });
   },
-  // 
   onShow: function () {
     // 恢复新建按钮状态
     this.setData({

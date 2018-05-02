@@ -8,8 +8,8 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.2.4",
-	"appid": "wx5681c2bc30465571",
+  "libVersion": "1.9.93",
+  "appid": "wx5681c2bc30465571",
 	"projectname": "wuyouMini",
 	"condition": {
 		"search": {

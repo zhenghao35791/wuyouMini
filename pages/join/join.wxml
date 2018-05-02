@@ -1,9 +1,10 @@
 <view class="add-page">
   <!-- 身份证号 -->
   <view class="mod-a mt20">
-    <view class="mod t-name">
+    <view class="mod t-name" bindtap="idCardCamera">
       <text class="key">身份证号</text>
-      <input bindinput="bindIDCardInput" type="idcard" class="input" maxlength="18" placeholder="" />
+      <!-- <input bindinput="bindIDCardInput" type="idcard" class="input" style="width:400rpx;" maxlength="18" placeholder="" /> -->
+      <image class="arrow-cam" src="../../images/camera.png"></image>
     </view>
   </view>
   <!-- 姓名 -->
@@ -119,6 +120,34 @@
     <view class="mod t-name" bindtap='otherInfo'>
       <text class="key">其他信息</text>
       <image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+    </view>
+  </view>
+  <!-- 银行卡 -->
+  <view class="mod-a mt20">
+    <view class="mod t-name" bindtap="">
+      <text class="key">银行卡</text>
+      <image class="arrow-cam" src="../../images/camera.png"></image>
+    </view>
+  </view>
+  <!-- 行驶证 -->
+  <view class="mod-a">
+    <view class="mod t-name" bindtap="">
+      <text class="key">行驶证</text>
+    <image class="arrow-cam" src="../../images/camera.png"></image>
+    </view>
+  </view>
+  <!-- 驾驶证 -->
+  <view class="mod-a">
+    <view class="mod t-name" bindtap="">
+      <text class="key">驾驶证</text>
+      <image class="arrow-cam" src="../../images/camera.png"></image>
+    </view>
+  </view>
+  <!-- 自拍照 -->
+  <view class="mod-a">
+    <view class="mod t-name" bindtap="">
+      <text class="key">自拍照</text>
+      <image class="arrow-cam" src="../../images/camera.png"></image>
     </view>
   </view>
 </view>

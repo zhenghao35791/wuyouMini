@@ -2,19 +2,20 @@
   "pages": [
     "pages/join/join",
     "pages/jobIntention/jobIntention",
-    "pages/jobRequire/jobRequire", 
-    "pages/otherInfo/otherInfo",       
-    "pages/professionSkill/professionSkill",        
+    "pages/jobRequire/jobRequire",
+    "pages/otherInfo/otherInfo",
+    "pages/professionSkill/professionSkill",
     "pages/workExper/workExper",
-    "pages/educateCerti/educateCerti",        
-    "pages/info/info"
+    "pages/educateCerti/educateCerti",
+    "pages/info/info",
+    "pages/idCardCamera/idCardCamera"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "无忧入职",
     "backgroundColor": "#f7f7f7",
-    "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
   },
   "tabBar": {
