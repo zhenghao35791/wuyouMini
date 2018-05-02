@@ -4,8 +4,8 @@ Page({
     workExpers: [
       {
         workID: 0,
-        workTimeStart: '2018-01-01',
-        workTimeEnd: '2018-01-01',
+        workTimeStart: '2000-01-01',
+        workTimeEnd: '2000-01-01',
         workCompany: '',
         workJob: ''
       }
@@ -21,8 +21,8 @@ Page({
     this.data.workExpers.push(
       {
         workID: newWorkID + 1,
-        workTimeStart: '2018-01-01',
-        workTimeEnd: '2018-01-01',
+        workTimeStart: '2000-01-01',
+        workTimeEnd: '2000-01-01',
         workCompany: '',
         workJob: ''
       }

@@ -3,6 +3,13 @@
   margin-top: 20rpx;
 }
 
+.t-name .input, .t-address .value {
+  text-align: right;
+  overflow: hidden;
+  color: #b2b2b2;
+  height: 44rpx;
+}
+
 .add-page {
   display: flex;
   flex-direction: column;

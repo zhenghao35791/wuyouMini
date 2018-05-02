@@ -3,7 +3,7 @@
   <view class="mod-a">
     <view class="mod t-name">
       <text class="key">薪资期望</text>
-      <input bindinput="bindMoneyExpect" class="input" maxlength="100" placeholder="" />元
+      <input bindinput="bindMoneyExpect" class="input" maxlength="100" placeholder="" />
     </view>
   </view>
   <!-- 缴纳社保 -->

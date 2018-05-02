@@ -1,6 +1,15 @@
 /* pages/jobIntention/jobIntention.wxss */
+
 .mt20 {
   margin-top: 20rpx;
+}
+
+.t-name .input, .t-address .value {
+  text-align: right;
+  width: 510rpx;
+  overflow: hidden;
+  color: #b2b2b2;
+  height: 44rpx;
 }
 
 .add-page {
@@ -32,11 +41,11 @@
   margin-left: 10rpx;
 }
 
-.long-btn{
+.long-btn {
   width: 92%;
   margin-top: 20rpx;
-  background-color:#4cabaf;
-  color:#fff;
+  background-color: #4cabaf;
+  color: #fff;
 }
 
 .date {
